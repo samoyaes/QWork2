@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gary.qwork.ProfesorActivity"
+    android:background="@drawable/fondo">
+
+    <ImageView
+        android:id="@+id/qrProfesor"
+        android:layout_width="141dp"
+        android:layout_height="121dp"
+        app:srcCompat="@drawable/qr"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtqrProfesor"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtMateriasProfesor"
+        app:layout_constraintVertical_bias="0.951"
+        app:layout_constraintLeft_toRightOf="@+id/tareasProfesor"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.859" />
+
+    <ImageView
+        android:id="@+id/tareasProfesor"
+        android:layout_width="160dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="34dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/tarea"
+        app:layout_constraintBottom_toTopOf="@+id/txtTareasProfesor" />
+
+    <ImageView
+        android:id="@+id/materiaProfesor"
+        android:layout_width="142dp"
+        android:layout_height="127dp"
+        app:srcCompat="@drawable/materias"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/txtTareasProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tareas"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="65dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txtqrProfesor"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="126dp" />
+
+    <TextView
+        android:id="@+id/txtqrProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginRight="73dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="126dp" />
+
+    <TextView
+        android:id="@+id/txtMateriasProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materias"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginRight="51dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/materiaProfesor"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
